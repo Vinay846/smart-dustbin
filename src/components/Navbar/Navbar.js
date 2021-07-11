@@ -21,7 +21,7 @@ function Navbar() {
     return (
         <>
         <Nav>
-            <Logo href="/home"><span>SmartDustbin</span></Logo>
+            <Logo href="/"><span>SmartDustbin</span></Logo>
 
             <Hamburger onClick={() => setIsOpen(!isOpen)}>
             {isOpen ?<X size={35}/>:<Menu size={35}/>}

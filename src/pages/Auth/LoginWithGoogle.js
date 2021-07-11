@@ -10,7 +10,7 @@ function LoginWithGoogle() {
     const context = useContext(AuthContext)
     const responseGoogle= async (response)=> {
         const tokenId = response.tokenId;
-
+        console.log(tokenId);
         let requestBody = {
             query: `
                 query Login($email: String!, $password: String!) {
