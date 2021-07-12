@@ -42,7 +42,7 @@ function LoginWithGoogle() {
             } 
             catch (error) {
                 console.log(error);
-                context.showToast( true, error.toString(), ToastColors.failure);
+                context.showToast( true, "allow cookies", ToastColors.failure);
             }
     }
 

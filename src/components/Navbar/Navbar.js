@@ -82,7 +82,7 @@ const Hamburger = styled.div`
     display: none;
     cursor: pointer;
     margin-right: 1rem;
-
+    
     @media (max-width: 768px) {
         display: flex;
     }
@@ -98,10 +98,11 @@ const MenuList = styled.ul`
     @media (max-width: 768px) {
         overflow: hidden;
         flex-direction: column;
-        width: 100%;
+        width: 81%;
         max-height: ${({isOpen}) => isOpen ? "300px": "0"};
         transition: max-height 0.3s ease-in;
     }
+
 `;
 
 const MenuLink = styled.li`
@@ -120,7 +121,7 @@ const MenuLink = styled.li`
         color: black;
         &.active {
             border-radius: 15px;
-            padding: 0.4rem 1rem;
+            padding: 1rem 1rem;
             background: #C6F7C2;
         }
     }
