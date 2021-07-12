@@ -37,7 +37,7 @@ function Navbar() {
                 <MenuLink><NavLink to="/Profile">Profile</NavLink></MenuLink  >
                 </>
                 }
-                <MenuLink onClick={handleLogout}><NavLink to="/login">{context.token ? <LogOut /> : <Key />}</NavLink></MenuLink>
+                <LastChildMenuLink onClick={handleLogout}><NavLink to="/login">{context.token ? <LogOut /> : <Key />}</NavLink></LastChildMenuLink>
             </MenuList>
         </Nav>
         {context.toast.show && <Toast showToast={context.toast}/>}
@@ -121,7 +121,7 @@ const MenuLink = styled.li`
         color: black;
         &.active {
             border-radius: 15px;
-            padding: 1rem 1rem;
+            padding: 0.4rem 1rem;
             background: #C6F7C2;
         }
     }
@@ -132,3 +132,11 @@ const MenuLink = styled.li`
     
 `;
 
+const LastChildMenuLink = styled(MenuLink)`
+
+    a {
+        &.active {
+            padding: 1rem 1rem;
+        }
+    }
+`;
