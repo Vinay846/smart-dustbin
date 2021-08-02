@@ -27,7 +27,7 @@ function Navbar() {
             {isOpen ?<X size={35}/>:<Menu size={35}/>}
             </Hamburger>
 
-            <MenuList isOpen={isOpen}>
+            <MenuList isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
                 <MenuLink><NavLink to="/home">Home</NavLink></MenuLink  >
                 <MenuLink><NavLink to="/Explore">Explore</NavLink></MenuLink  >
                 <MenuLink><NavLink to="/dustbins">Locations</NavLink></MenuLink  >
