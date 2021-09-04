@@ -71,23 +71,23 @@ function Signup() {
         <Form onSubmit={submitHandler}>
             <FormControl>
                 <label htmlFor="name">Name</label>
-                <input value={name} type="text" name="name" id="name" onChange={e => setName(e.target.value)} />
+                <input value={name} type="text" name="name" id="name" placeHolder="Full Name" onChange={e => setName(e.target.value)} />
             </FormControl>
             <FormControl>
                 <label htmlFor="email">Email</label>
-                <input value={email} type="text" name="email" id="email" onChange={e => setEmail(e.target.value)} />
+                <input value={email} type="text" name="email" id="email" placeholder="your@email.com" onChange={e => setEmail(e.target.value)} />
             </FormControl>
            <FormControl>
                 <label htmlFor="password">Password</label>
-                <input value={password} type="password" name="password" id="password" onChange={e => setPassword(e.target.value)} />
+                <input value={password} type="password" name="password" id="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
             </FormControl>
             <FormControl>
                 <label htmlFor="mnumber">Mobile Number</label>
-                <input value={mnumber} type="number" name="mnumber" id="mnumber" onChange={e => setMnumber(e.target.value)} />
+                <input value={mnumber} type="number" name="mnumber" id="mnumber" placeholder="+91" onChange={e => setMnumber(e.target.value)} />
             </FormControl>
             <FormControl>
                 <label htmlFor="rfid">RFID</label>
-                <input value={rfid} type="text" name="rfid" id="rfid" onChange={e => setRfid(e.target.value)} />
+                <input value={rfid} type="text" name="rfid" id="rfid" placeholder="8V 4I 6N 2U" onChange={e => setRfid(e.target.value)} />
             </FormControl>
             {isLoading ? <Spinner />: <FormControl>
                 <button type="submit">Signup</button>

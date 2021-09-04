@@ -16,6 +16,7 @@ function Modal({redeemPoint, closeModal}) {
                     <CheckCircle size={150} strokeWidth={0.5} color="green"/>
                     <h1>Congrats you have redeemed {redeemPoint}.00 points</h1>
                     <h1>Successfully</h1>
+                    <h2>You will get reward soon...</h2>
                 </MessageBody>
             </InnerBody>
         </OuterBody>

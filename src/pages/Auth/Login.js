@@ -97,11 +97,11 @@ function Login() {
         <Form onSubmit={submitHandler}>
             <FormControl>
                 <label htmlFor="email">Email</label>
-                <input value={email} type="text" name="email" id="email" onChange={e => setEmail(e.target.value)} />
+                <input value={email} type="text" name="email" id="email" placeHolder="your@gmail.com" onChange={e => setEmail(e.target.value)} />
             </FormControl>
             {!reset && <FormControl>
                 <label htmlFor="password">Password</label>
-                <input value={password} type="password" name="password" id="password" onChange={e => setPassword(e.target.value)} />
+                <input value={password} type="password" name="password" id="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
             </FormControl>}
             <FormControl>
             {isLoading ? <Spinner />: 

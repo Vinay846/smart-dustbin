@@ -11,6 +11,8 @@ import AuthContext from './context/auth-context';
 import {Main, Background, ToastColors} from './components/Styles/styles';
 import Bins from './pages/Bins/Bins';
 import ResetPassword from './pages/resetPassword/resetPassword';
+import Footer from './pages/Footer';
+import Donation from './pages/Donataion';
 
 function App() {
   const [token, setToken] = useState(null);
@@ -140,6 +142,8 @@ function App() {
           </Switch>
         </Main>
       </AuthContext.Provider>
+      <Footer />
+      <Donation />
     </BrowserRouter>
   );
 }
